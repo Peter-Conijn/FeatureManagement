@@ -8,11 +8,19 @@ codeunit 50104 "Feature Event Runner"
 {
     Access = Public;
 
+    /// <summary>
+    /// Runs the event triggered when a feature is enabled.
+    /// </summary>
+    /// <param name="FeatureId">The ID of the feature.</param>
     procedure RunFeatureEnabledEvent(FeatureId: Text[50])
     begin
         OnFeatureEnabled(FeatureId);
     end;
 
+    /// <summary>
+    /// Runs the event triggered when a feature is disabled.
+    /// </summary>
+    /// <param name="FeatureId">The ID of the feature.</param>
     procedure RunFeatureDisabledEvent(FeatureId: Text[50])
     begin
         OnFeatureDisabled(FeatureId);
