@@ -27,4 +27,6 @@ codeunit 50106 "Data Upgrade Impl."
         DataUpgrade."Destination Datatype" := DestinationDataType;
         DataUpgrade.Modify(true);
     end;
+
+    // TODO: Add procedures for updating and deleting data upgrade rules.
 }

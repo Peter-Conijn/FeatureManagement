@@ -25,6 +25,8 @@ codeunit 50105 "Data Upgrade"
         DataUpgradeImpl.InsertDataUpgradeRule(FeatureId, SourceTableId, SourceFieldId, SourceDataType, DestinationTableId, DestinationFieldId, DestinationDataType);
     end;
 
+    // TODO: Add procedures for updating and deleting data upgrade rules.
+
     var
         DataUpgradeImpl: Codeunit "Data Upgrade Impl.";
 }
