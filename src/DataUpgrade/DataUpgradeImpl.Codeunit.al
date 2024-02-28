@@ -14,7 +14,7 @@ codeunit 50106 "Data Upgrade Impl."
         DataUpgrade: Record "Data Upgrade";
     begin
         if not DataUpgrade.Get(FeatureId, SourceTableId, SourceFieldId) then begin
-            DataUpgrade.Init;
+            DataUpgrade.Init();
             DataUpgrade."Feature ID" := FeatureId;
             DataUpgrade."Source Table" := SourceTableId;
             DataUpgrade."Source Field" := SourceFieldId;
@@ -27,4 +27,6 @@ codeunit 50106 "Data Upgrade Impl."
         DataUpgrade."Destination Datatype" := DestinationDataType;
         DataUpgrade.Modify(true);
     end;
+
+    // TODO: Add procedures for updating and deleting data upgrade rules.
 }

@@ -4,6 +4,8 @@ table 50100 "Data Upgrade"
     Caption = 'Data Upgrade';
     DataClassification = SystemMetadata;
 
+    // TODO: add record identifier field matches
+
     fields
     {
         field(1; "Feature ID"; Text[50])
@@ -42,10 +44,4 @@ table 50100 "Data Upgrade"
             Clustered = true;
         }
     }
-    local procedure MyProcedure()
-    var
-        myInt: Record Field;
-    begin
-
-    end;
 }
